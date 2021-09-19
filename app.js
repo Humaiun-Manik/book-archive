@@ -27,7 +27,7 @@ searchBtn.addEventListener('click', () => {
 const displayBooks = books => {
     const filterBooks = books.filter(book => book.cover_i !== undefined && book.title !== undefined && book.author_name !== undefined && book.publisher !== undefined);
     if (filterBooks.length === 0) {
-        searchResult.innerText = "No Results Found";
+        searchResult.innerText = "No Results Found!!!";
     } else {
         searchResult.innerText = `You have found about ${filterBooks.length} result.`;
         filterBooks.slice(0, 20).forEach((book) => {
