@@ -12,24 +12,31 @@
 </head>
 
 <body>
-    <section class="container">
-        <!-- search field -->
-        <h1 class="mt-5 text-center text-bold" style="color:#067b80;">Search Your Favorite Books Here...</h1>
-        <div class="input-group mb-3 mt-5 w-50 mx-auto">
-            <input id="search-input" type="text" class="form-control" placeholder="Write your book name"
-                aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button id="search-btn" class="btn btn-outline-success ms-1" type="button">Search</button>
-        </div>
-        <!-- search result -->
-        <h3 class="text-center text-success mb-5">You have found about <span id="search-result"></span> results</h3>
-        <!-- show books -->
-        <div class="row row-cols-1 row-cols-md-4 g-4" id="book-container">
+    <main>
+        <!-- search content -->
+        <section class="container">
+            <h1 class="mt-5 text-center text-bold" style="color:#067b80;">Search Your Favorite Books Here...</h1>
+            <!-- search field -->
+            <div class="input-group mb-3 mt-5 w-50 mx-auto">
+                <input id="search-field" type="text" class="form-control" placeholder="Write your book name"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button id="search-btn" class="btn btn-outline-success ms-1" type="button">Search</button>
+            </div>
+        </section>
+        <!-- results content -->
+        <section class="container">
+            <!-- error messages -->
+            <div id="error">
 
-        </div>
-    </section>
+            </div>
+            <!-- search result -->
+            <h3 id="search-result" class="text-center text-success mb-5"></h3>
+            <!-- show books -->
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="book-container">
 
-    <!-- <h1 style="color: #eb5e46;">fjdksj</h1> -->
-
+            </div>
+        </section>
+    </main>
     <script src="app.js"></script>
 </body>
 
