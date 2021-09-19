@@ -26,8 +26,6 @@ searchBtn.addEventListener('click', () => {
 // display search results
 const displayBooks = books => {
     const filterBooks = books.filter(book => book.cover_i !== undefined && book.title !== undefined && book.author_name !== undefined && book.publisher !== undefined);
-
-    // show search result
     if (filterBooks.length === 0) {
         searchResult.innerText = "No Results Found";
     } else {
